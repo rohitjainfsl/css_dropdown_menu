@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+/* @font-face */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+header{
+  background-color: rgb(190, 37, 37);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 2rem;
+}
+header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+header nav ul{
+  display: flex;
+}
+header nav ul li{
+  list-style: none;
+  position: relative;
+}
+header nav ul li ul{
+  position: absolute;
+  flex-direction: column;
+  background-color: rgb(190, 37, 37);
+  top: 34px;
+  width: 180px;
+  display: none;
+}
+header nav ul li ul li a{
+  padding: 0.75rem 0.5rem;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #3e3e3e;
+}
+header nav ul li ul li a:hover{
+  color: #fff;
+  background-color: #000;
+}
+header nav ul li ul li:last-of-type > a{
+  border-bottom: none;
+}
+
+header nav ul li:hover > ul{
+  display: flex;
+}
+
+header nav ul li ul li ul{
+  right:100%;
+  top: 0;
+}
