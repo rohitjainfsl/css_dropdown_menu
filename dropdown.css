@@ -19,7 +19,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding: 0 2rem;
+  padding: 0 3rem 0 2rem;
 }
 header nav ul li a{
   color: #fff;
@@ -28,19 +28,22 @@ header nav ul li a{
 }
 header nav ul{
   display: flex;
+  position: relative;
 }
 header nav ul li{
   list-style: none;
-  position: relative;
 }
-header nav ul li ul{
+header .megamenu{
   position: absolute;
-  flex-direction: column;
-  background-color: rgb(190, 37, 37);
   top: 34px;
-  width: 180px;
-  display: none;
+  left: 0;
+  background-color: rgb(190, 37, 37);
+  max-width: 499px;
+  width: 499px;
+  min-height: 50vh;
+  max-height: 350px;
 }
+
 header nav ul li ul li a{
   padding: 0.75rem 0.5rem;
   display: inline-block;
@@ -62,4 +65,4 @@ header nav ul li:hover > ul{
 header nav ul li ul li ul{
   right:100%;
   top: 0;
-}
+} 
